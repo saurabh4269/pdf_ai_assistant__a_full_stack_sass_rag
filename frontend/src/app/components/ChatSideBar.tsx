@@ -23,7 +23,7 @@ const ChatSideBar = ({ chats, chatId }: Props) => {
 
   useEffect(() => {
     setChatWindows(chats);
-  }, []);
+  }, [chats]);
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);

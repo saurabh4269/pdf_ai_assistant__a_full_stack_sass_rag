@@ -13,6 +13,11 @@ type Props = {
   };
 };
 
+type Chat = {
+  chatId: string;
+  fileName: string;
+};
+
 const ChatPage = async ({ params: { chatId } }: Props) => {
   const { userId } = await auth();
 
@@ -26,7 +31,7 @@ const ChatPage = async ({ params: { chatId } }: Props) => {
     return redirect("/");
   }
 
-  const _chat = _chats.find((chat) => chat.chatId === chatId)!;
+  const _chat = _chats.find((chat: Chat) => chat.chatId === chatId)!;
 
   if (!_chat) {
     return redirect("/chat");
