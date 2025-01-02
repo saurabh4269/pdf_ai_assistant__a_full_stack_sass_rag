@@ -1,0 +1,9 @@
+.env
+.env.test
+docker.env
+notebooks
+documents
+venv
+__pycache__
+temp
+images
