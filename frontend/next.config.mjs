@@ -8,8 +8,8 @@ export default withSentryConfig(nextConfig, {
 
 // Suppresses source map uploading logs during build
 silent: true,
-org: "nelson-ai-3x",
-project: "chat-pdf-ai",
+org: "saurabh42",
+project: "javascript-nextjs",
 }, {
 // For all available options, see:
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
