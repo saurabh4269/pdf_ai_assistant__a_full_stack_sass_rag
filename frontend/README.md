@@ -12,15 +12,7 @@ A modern full-stack web application that allows users to upload PDF files, perfo
 - Jina AI for embedding and retrieving reranking
 - UI optimizations for model devices
 
-
-## Preview
-
-<img src = "images/preview.gif">
-
-
 ## Overall Architecture
-
-<img src = "images/architecture.png">
 
 ### Backend:
 
