@@ -9,14 +9,7 @@ The FastAPI server acts as the main backend API for full stack Chat PDF AI Assis
 - It uses the Jina framework for embedding text data and reranking for retrieval data.
 - The "api/hybrid_search" route handles hybrid search queries, combining traditional text search (BM25) with vector similarity search with Jina AI reranking.
 
-## Preview
-
-
-
 ## Overall Architecture
-
-
-<img src = "images/architecture.png">
 
 ## Details about PDF ingestion
 
@@ -26,9 +19,6 @@ The FastAPI server acts as the main backend API for full stack Chat PDF AI Assis
 - The chunked text data is then passed through an embedding pipeline using the Jina Embedding API. This step converts the textual data into high-dimensional vector representations.
 - The resulting vector embeddings, along with their corresponding text chunks, are ingested and stored in a vector database like MongoDB.
 - The original PDF file also is uploaded to an S3 storage service for front display.
-
-
-<img src = "images/ingest_file.png">
 
 ## Run Backend API Locally
 
